@@ -20,6 +20,12 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+a{
+    display: block;
+    width: var(--logo);
+    height: var(--logo);
+    background: black;
+}
 a img{
     width: var(--logo);
     height: var(--logo);
