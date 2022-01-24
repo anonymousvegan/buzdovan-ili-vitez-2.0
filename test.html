@@ -12,19 +12,22 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="slika">
+    <div id="slika-kontejner">
         <div id="tekst-iznad-slike">
             PITANJE
         </div>
-        <img  id="slika-pitanja"/>
-        <div id="linija"></div>
-        <div id="broj-pitanja"><span id="trentuno"></span>/<span id="ukupno"></span></div>
-    </nav>
+        <div id="pitanje">
+            <p id="tekst">Da li pijete?</p>
+            <img src="1.png" id="slika-pitanja"/>
+            <div id="linija" class="bg-primary"></div>
+        </div>
+        <div id="broj-pitanja"><span id="trentuno">16</span><span id="kosa">/</span><span id="ukupno">15</span></div>
+    </div>
 
     <div class="container">
-        <button class="btn btn-primary"></button>
-        <button class="btn btn-primary"></button>
-        <button class="btn btn-primary"></button>
+        <button class="btn btn-primary">Samo za slavu da bi očuvali stare običaje</button>
+        <button class="btn btn-primary">Pomalo, rakija je dobra za imunitet</button>
+        <button class="btn btn-primary">Ništa jače od vode</button>
     </div>
 </body>
 </html>

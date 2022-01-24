@@ -1,21 +1,21 @@
 let pitanja = [
     {
-        pitanje: "Da li pijete ?",
+        pitanje: "Da li pijete",
         odgovori: [
             {
                 tekst: "Samo za slavu da bi očuvali stare običaje",
-                zvuk : "",
+                zvuk : "alkohol_je_stetan.mp3",
             },
             {
                 tekst: "Pomalo, rakija je dobra za imunitet",
-                zvuk : "",
+                zvuk : "alkohol_je_stetan.mp3",
             },
             {
                 tekst:  "Ništa jače od vode",
                 zvuk : "",
             },
         ],
-        tacan:2,
+        tacan: [2],
     },
     {
         pitanje: "Da li pušite?",
@@ -30,10 +30,10 @@ let pitanja = [
             }, 
             {
                 tekst:  "Ovo pitanje mi je nejasno",
-                zvuk : "", //ideš pod mač bato
+                zvuk : "pod_mac.mp3", //ideš pod mač bato
             }, 
         ],
-        tacan:1,
+        tacan:[1],
     },
     {
         pitanje: "Škola je: ?",
@@ -44,17 +44,17 @@ let pitanja = [
             }, 
             {
                 tekst: "Ateistička debilana",
-                zvuk : "",
+                zvuk : "debilana.mp3",
             }, 
             {
                 tekst:  "Mesto za  druženje i igru",
                 zvuk : "",
             }, 
         ],
-        tacan:1,
+        tacan:[1],
     },
     {
-        pitanje: "Gde ćeš tražiti devojku?",
+        pitanje: "Gde ćeš tražiti devojku",
         odgovori: [
             {
                 tekst: "Na sistematkom pregledu(nije ovo, ne pitaj kako znam)",
@@ -69,10 +69,10 @@ let pitanja = [
                 zvuk : "",
             }, 
         ],
-        tacan:2,
+        tacan:[2],
     },
     {
-        pitanje: "Koja je najpametnija knjiga?",
+        pitanje: "Koja je najpametnija knjiga",
         odgovori: [
             {
                 tekst: "Biblija",
@@ -87,10 +87,10 @@ let pitanja = [
                 zvuk : "",
             }, 
         ],
-        tacan: 0,
+        tacan: [0],
     },
     {
-        pitanje: "Koja je najbolji auto?",
+        pitanje: "Koja je najbolji auto",
         odgovori: [
             {
                 tekst: "Golf 2",
@@ -105,10 +105,10 @@ let pitanja = [
                 zvuk : "brm.mp3",
             }, 
         ],
-        tacan: 1,
+        tacan:  [1],
     },
     {
-        pitanje: "Znaš li da rešiš Sledeće dvostruke integrale?",
+        pitanje: "Znaš li da rešiš Sledeće dvostruke integrale",
         odgovori: [
             {
                 tekst: "Naravno, to je ništa za mene",
@@ -123,7 +123,7 @@ let pitanja = [
                 zvuk : "",
             }, 
         ],
-        tacan: 2,
+        tacan: [2],
     },
     {
         pitanje: "Koje ti je omiljeno piće?",
@@ -137,37 +137,154 @@ let pitanja = [
                 zvuk : "kokakola.mp3",
             }, 
             {
-                tekst: "ne",
+                tekst: "Ceđena pomorandža",
                 zvuk : "",
             }, 
         ],
-        tacan: 2,
+        tacan: [0, 2],
     },
     {
-        pitanje: "",
+        pitanje: "Vegani su:",
         odgovori: [
             {
-                tekst: "Naravno, to mene",
-                zvuk : "dvostruke_intregrale.mp3",
+                tekst: "Ekstremno libearalna grupa koja preti da uništi ovo društvo",
+                zvuk : "dnevnjak.mp3",
             }, 
             {
-                tekst: "Ne, naučiću",
-                zvuk : "",
+                tekst: "Sekta",
+                zvuk : "sekta.mp3",
             }, 
             {
-                tekst: "ne",
+                tekst: "Ljudi koji se hrane zdravo",
                 zvuk : "",
             }, 
         ],
-        tacan: 2,
+        tacan: [2],
+    },
+    {
+        pitanje: "Kada bi te devojka pozvala kući, šta bi uradio",
+        odgovori: [
+            {
+                tekst: "Otišao da zajendo čitamo Bibliju",
+                zvuk : "da_citate_bibliju_mp3",
+            }, 
+            {
+                tekst: "Odbio bih",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Znao bih šta hoće, otišao bih",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [1],
+    },
+    {
+        pitanje: "Da li znate šta je na slici?", //Marihuana
+        odgovori: [
+            {
+                tekst: "Mora da je nešto zdravo čim je biljno",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Meni baka pitu pravila, jeo kao mali",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Prvi put vidim  u životu i definitivno  ne znam šta je",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [2],
+    },
+    {
+        pitanje: "Japanci i kinezi su:",
+        odgovori: [
+            {
+                tekst: "Srbi",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Albanci(dakle Iliri, dakle Srbi)",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Potomci skenderbega (dakle Albanci, dakle Iliri, dakle Srbi)",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [0, 1, 2],
+    },
+    {
+        pitanje: "Koji instrument bi voleli da svirate:",
+        odgovori: [
+            {
+                tekst: "Gitaru, to devojke vole",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Gusle, da budem vitez",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Klavir",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [1],
+    },
+    {
+        pitanje: "Ko je najpametniji političar?",
+        odgovori: [
+            {
+                tekst: "Dritan Abazović",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Abazović Dritan",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Sveti velikomučenik AV",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [0, 1],
+    },
+    {
+        pitanje: "Da li ste za obaveznu va**inaciju",
+        odgovori: [
+            {
+                tekst: "Ne, neka svako ima izbor",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Da, va**ine su nam mnogo pomogle",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Ne",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [0,2],
     },
 ]
 
-console.log(pitanja.length);
+const buttons = document.querySelectorAll(".btn");
+buttons.forEach(button =>{
+    button.addEventListener("click", ()=>{
+        alert("Radi");
+    })
+})
 
-// const buttons = document.querySelectorAll(".btn");
-// buttons.forEach(button =>{
-//     button.addEventListener("click", ()=>{
-//         alert("Radi");
-//     })
-// })
+const img = document.querySelector("#slika-pitanja")
+
+function random(){
+    let a = Math.random()
+    return a, b, c;
+}
+
+function start(){
+
+}
