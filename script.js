@@ -29,6 +29,7 @@ const trentunoElem = document.querySelector("#trenutno")
 const pitanjeElem = document.querySelector("#tekst");
 const slikaElem = document.querySelector("#slika-pitanja")
 const linijaElem = document.querySelector("#linija");
+const audioElem = document.querySelector("#audio")
 
 buttons.forEach(button =>{
     button.addEventListener("click", (event) => {
@@ -38,6 +39,10 @@ buttons.forEach(button =>{
             if(moguciOdgovori[i].tekst == btn){
                 odgovori.push(i);
                 console.log(i);
+                if(moguciOdgovori[i].zvuk != null){
+                    audio.src = moguciOdgovori[i].zvuk;
+                    audio.play();
+                }
                 trentuno++;
                 if(trentuno<=ukupno){
                     podesi()
