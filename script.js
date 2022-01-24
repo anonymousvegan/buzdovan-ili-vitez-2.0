@@ -1,7 +1,9 @@
 const odgovori = [];
-let trentuno; 
+let trentuno = 1; 
 let indexTrenutnog;
 let ukupno = pitanja.length;
+let rand = [];
+
 let slike = [
     "1.png",
     "2.jpg",
@@ -19,7 +21,6 @@ let slike = [
     "14.jpg",
     "15.jpg"
     ];
-
 
 const buttons = document.querySelectorAll(".btn");
 const imgElem = document.querySelector("#slika-pitanja")
@@ -61,9 +62,6 @@ function random(){
     return [a, b, c];
 }
 
-let rand = [];
-
-
 function podesi(){
     rand = random();
     indexTrenutnog = trentuno - 1;
@@ -77,8 +75,4 @@ function podesi(){
     });
 }
 
-start()
-function start(){
-    trentuno = 1;
-    podesi(trentuno, ukupno );
-}
+podesi();

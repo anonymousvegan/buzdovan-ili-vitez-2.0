@@ -8,7 +8,7 @@ let pitanja = [
             },
             {
                 tekst: "Pomalo, rakija je dobra za imunitet",
-                zvuk : "alkohol_je_stetan.mp3",
+                zvuk : "rakija.mp3",
             },
             {
                 tekst:  "Ništa jače od vode",
@@ -22,7 +22,7 @@ let pitanja = [
         odgovori: [
             {
                 tekst: "Ponekad zapalim, uz kaficu",
-                zvuk : "pusi_cigare.mp3",
+                zvuk : "", // pusi_cigare.mp3
             }, 
             {
                 tekst:  "Ne, užasano smrdi",
@@ -102,7 +102,7 @@ let pitanja = [
             }, 
             {
                 tekst: "Bmw, to devojke vole",
-                zvuk : "brm.mp3",
+                zvuk : "",//brm.mp3
             }, 
         ],
         tacan:  [1],
@@ -170,7 +170,7 @@ let pitanja = [
             }, 
             {
                 tekst: "Sekta",
-                zvuk : "sekta.mp3",
+                zvuk : "",
             }, 
             {
                 tekst: "Ljudi koji se hrane zdravo",
@@ -242,7 +242,7 @@ let pitanja = [
             }, 
             {
                 tekst: "Gusle, da budem vitez",
-                zvuk : "",
+                zvuk : "gusle.mp3",
             }, 
             {
                 tekst: "Klavir",
