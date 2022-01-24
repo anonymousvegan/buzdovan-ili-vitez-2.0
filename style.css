@@ -9,8 +9,8 @@
     overflow: hidden;
 }
 body{
-    width: 100vh;
-    height: 100vw;
+    width: 100vw;
+    height: 100vh;
     background: url(pozadina.jpg);
 }
 nav{
@@ -25,9 +25,32 @@ a{
     display: block;
     width: var(--logo);
     height: var(--logo);
-    background: black;
 }
 a img{
     width: var(--logo);
     height: var(--logo);
+ 
 }
+
+#logo {
+    margin-right: 1rem;
+}
+
+#jezik {
+    margin-left: 1rem;
+    color: #eee;
+    text-shadow: 0 0 10px grey;
+    font-weight: 900;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+
+}
+
+.container p {
+    font-size: 3rem;
+    text-align: center;
+}
+
