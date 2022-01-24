@@ -26,7 +26,8 @@ const imgElem = document.querySelector("#slika-pitanja")
 const ukupnoElem = document.querySelector("#ukupno")
 const trentunoElem = document.querySelector("#trenutno")
 const pitanjeElem = document.querySelector("#tekst");
-const slikaElem = document.querySelector("#")
+const slikaElem = document.querySelector("#slika-pitanja")
+
 
 buttons.forEach(button =>{
     button.addEventListener("click", (event) => {
@@ -69,6 +70,7 @@ function podesi(){
     trentunoElem.textContent = trentuno;
     ukupnoElem.textContent = ukupno;
     pitanjeElem.textContent = pitanja[indexTrenutnog].pitanje;
+    slikaElem.src = slike[indexTrenutnog];
     buttons.forEach((btn, index) => {
         btn.textContent = pitanja[indexTrenutnog].odgovori[rand[index]].tekst;
     });
