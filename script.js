@@ -27,7 +27,7 @@ const ukupnoElem = document.querySelector("#ukupno")
 const trentunoElem = document.querySelector("#trenutno")
 const pitanjeElem = document.querySelector("#tekst");
 const slikaElem = document.querySelector("#slika-pitanja")
-
+const linijaElem = document.querySelector("#linija");
 
 buttons.forEach(button =>{
     button.addEventListener("click", (event) => {
@@ -71,6 +71,7 @@ function podesi(){
     ukupnoElem.textContent = ukupno;
     pitanjeElem.textContent = pitanja[indexTrenutnog].pitanje;
     slikaElem.src = slike[indexTrenutnog];
+    linijaElem.style.width = `${(100 / ukupno) * trentuno}%`;   
     buttons.forEach((btn, index) => {
         btn.textContent = pitanja[indexTrenutnog].odgovori[rand[index]].tekst;
     });
