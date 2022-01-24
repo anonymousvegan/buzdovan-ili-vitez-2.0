@@ -1,6 +1,6 @@
 let pitanja = [
     {
-        pitanje: "Da li pijete",
+        pitanje: "Da li pijete?",
         odgovori: [
             {
                 tekst: "Samo za slavu da bi očuvali stare običaje",
@@ -36,7 +36,7 @@ let pitanja = [
         tacan:[1],
     },
     {
-        pitanje: "Škola je: ?",
+        pitanje: "Škola je ...",
         odgovori: [
             {
                 tekst: "Obrazovno-vaspitna ustanova",
@@ -54,7 +54,7 @@ let pitanja = [
         tacan:[1],
     },
     {
-        pitanje: "Gde ćeš tražiti devojku",
+        pitanje: "Gde ćeš tražiti devojku?",
         odgovori: [
             {
                 tekst: "Na sistematkom pregledu(nije ovo, ne pitaj kako znam)",
@@ -72,7 +72,7 @@ let pitanja = [
         tacan:[2],
     },
     {
-        pitanje: "Koja je najpametnija knjiga",
+        pitanje: "Koja je najpametnija knjiga ikada?",
         odgovori: [
             {
                 tekst: "Biblija",
@@ -90,7 +90,7 @@ let pitanja = [
         tacan: [0],
     },
     {
-        pitanje: "Koja je najbolji auto",
+        pitanje: "Koja je najbolji auto?",
         odgovori: [
             {
                 tekst: "Golf 2",
@@ -107,19 +107,37 @@ let pitanja = [
         ],
         tacan:  [1],
     },
+    //{
+    //     pitanje: "Znaš li da rešiš Sledeće dvostruke integrale?",
+    //     odgovori: [
+    //         {
+    //             tekst: "Naravno, to je ništa za mene",
+    //             zvuk : "dvostruke_intregrale.mp3",
+    //         }, 
+    //         {
+    //             tekst: "Ne, naučiću",
+    //             zvuk : "",
+    //         }, 
+    //         {
+    //             tekst: "ne",
+    //             zvuk : "",
+    //         }, 
+    //     ],
+    //     tacan: [2],
+    // },
     {
-        pitanje: "Znaš li da rešiš Sledeće dvostruke integrale",
+        pitanje: "Šta radiš ukoliko ti kamenjarka piše poruke i poziva na sex?",
         odgovori: [
             {
-                tekst: "Naravno, to je ništa za mene",
-                zvuk : "dvostruke_intregrale.mp3",
-            }, 
-            {
-                tekst: "Ne, naučiću",
+                tekst: "Ugovoriš sastanak, družite se i oženiš je",
                 zvuk : "",
             }, 
             {
-                tekst: "ne",
+                tekst: "Blokiraš broj",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Objasniš joj da niste jedno za drugo",
                 zvuk : "",
             }, 
         ],
@@ -144,7 +162,7 @@ let pitanja = [
         tacan: [0, 2],
     },
     {
-        pitanje: "Vegani su:",
+        pitanje: "Vegani su...",
         odgovori: [
             {
                 tekst: "Ekstremno libearalna grupa koja preti da uništi ovo društvo",
@@ -162,7 +180,7 @@ let pitanja = [
         tacan: [2],
     },
     {
-        pitanje: "Kada bi te devojka pozvala kući, šta bi uradio",
+        pitanje: "Kada bi te devojka pozvala kući, šta bi uradio?",
         odgovori: [
             {
                 tekst: "Otišao da zajendo čitamo Bibliju",
@@ -216,7 +234,7 @@ let pitanja = [
         tacan: [0, 1, 2],
     },
     {
-        pitanje: "Koji instrument bi voleli da svirate:",
+        pitanje: "Koji instrument bi voleli da svirate?",
         odgovori: [
             {
                 tekst: "Gitaru, to devojke vole",
@@ -252,7 +270,7 @@ let pitanja = [
         tacan: [0, 1],
     },
     {
-        pitanje: "Da li ste za obaveznu va**inaciju",
+        pitanje: "Da li ste za obaveznu va**inaciju?",
         odgovori: [
             {
                 tekst: "Ne, neka svako ima izbor",
