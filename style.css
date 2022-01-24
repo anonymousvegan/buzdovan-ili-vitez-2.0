@@ -1,8 +1,26 @@
+:root{
+    --logo: 60px;
+}
+
 *, *::after, *::before{
     font-family: arial;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body{
-
+    width: 100vh;
+    height: 100vw;
+    background: url(pozadina.jpg);
+}
+nav{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a img{
+    width: var(--logo);
+    height: var(--logo);
 }
