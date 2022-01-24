@@ -6,7 +6,18 @@ let slike = [
     "1.png",
     "2.jpg",
     "3.jpg",
-    "4."
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpeg",
+    "9.jpg",
+    "10.jpg",
+    "11.jpg",
+    "12.jpg",
+    "13.jpg",
+    "14.jpg",
+    "15.jpg"
     ];
 
 
@@ -15,7 +26,7 @@ const imgElem = document.querySelector("#slika-pitanja")
 const ukupnoElem = document.querySelector("#ukupno")
 const trentunoElem = document.querySelector("#trenutno")
 const pitanjeElem = document.querySelector("#tekst");
-
+const slikaElem = document.querySelector("#")
 
 buttons.forEach(button =>{
     button.addEventListener("click", (event) => {
