@@ -1,5 +1,7 @@
 *, *::after, *::before{
     font-family: arial;
+    margin: 0;
+    padding: 0;
 }
 body{
 
