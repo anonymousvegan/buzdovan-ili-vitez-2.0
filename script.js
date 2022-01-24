@@ -2,11 +2,20 @@ const odgovori = [];
 let trentuno; 
 let indexTrenutnog;
 let ukupno = pitanja.length;
+let slike = [
+    "1.png",
+    "2.jpg",
+    "3.jpg",
+    "4."
+    ];
+
 
 const buttons = document.querySelectorAll(".btn");
 const imgElem = document.querySelector("#slika-pitanja")
 const ukupnoElem = document.querySelector("#ukupno")
 const trentunoElem = document.querySelector("#trenutno")
+const pitanjeElem = document.querySelector("#tekst");
+
 
 buttons.forEach(button =>{
     button.addEventListener("click", (event) => {
@@ -16,6 +25,13 @@ buttons.forEach(button =>{
             if(moguciOdgovori[i].tekst == btn){
                 odgovori.push(i);
                 console.log(i);
+                trentuno++;
+                if(trentuno<=ukupno){
+                    podesi()
+                }
+                else{
+                    console.log("kraj");
+                }
             }
         }
     })
@@ -33,13 +49,15 @@ function random(){
     return [a, b, c];
 }
 
-let rand = random();
+let rand = [];
 
 
 function podesi(){
+    rand = random();
     indexTrenutnog = trentuno - 1;
     trentunoElem.textContent = trentuno;
     ukupnoElem.textContent = ukupno;
+    pitanjeElem.textContent = pitanja[indexTrenutnog].pitanje;
     buttons.forEach((btn, index) => {
         btn.textContent = pitanja[indexTrenutnog].odgovori[rand[index]].tekst;
     });
