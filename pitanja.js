@@ -299,7 +299,7 @@ let pitanja = [
                 zvuk : "dnevnjak2.mp3",
             }, 
             {
-                tekst: "Otićiću pod jorgan planinu i drugarima ću reći da nisam zainteresovan",
+                tekst: "Otići ću pod jorgan planinu i drugarima ću reći da nisam zainteresovan",
                 zvuk : "",
             }, 
         ],
@@ -375,6 +375,6 @@ let pitanja = [
                 zvuk : "stojan.mp3",
             }, 
         ],
-        tacan: [2],
+        tacan: [1],
     },
 ]

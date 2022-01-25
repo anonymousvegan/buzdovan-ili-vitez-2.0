@@ -26,6 +26,7 @@ const slike = [
     "19.jpeg",
     "20.jpeg"
     ];
+
 let tekstovi  = [" Ti si potpuni buzdovan, tebe demoni razvaljuju! Uzmi nešto pametno da radiš, da čitaš Bibliju, upiši školu gusala ili  nađi neko planinarsko društvo!",
 "Nisi  totalno odvaljen, i imaš potencijala, moli se Bogu da se promeniš i da napreduješ u životu!",
 "Vidi prijatelju, treba da prestaneš da radiš te loše stvari, i da počneš da radiš dobre stvari, na samoj si sredini!",
@@ -72,22 +73,28 @@ buttons.forEach(button =>{
                         krajElem.classList.add("prikazi");
                         let brojTacnihOdgovora = tacniOdgovoriKorisnika.length;
                         spanElem.textContent = `${brojTacnihOdgovora}/${ukupno}`;
-                        if(tacniOdgovori.length<4){
+                        if(tacniOdgovoriKorisnika.length>=0){
+                            console.log(0);
                             krajnjitekstElem.textContent = tekstovi[0];
                         }
-                        else if(tacniOdgovori.length<8){
+                        if(tacniOdgovoriKorisnika.length>=4){
+                            console.log(0);
                             krajnjitekstElem.textContent = tekstovi[1];
                         }
-                        else if(tacniOdgovori.length<12){
+                        if(tacniOdgovoriKorisnika.length>=8){
+                            console.log(0);
                             krajnjitekstElem.textContent = tekstovi[2];
                         }
-                        else if(tacniOdgovori.length<16){
+                        if(tacniOdgovoriKorisnika.length>=12){
+                            console.log(0);
                             krajnjitekstElem.textContent = tekstovi[3];
                         }
-                        else if(tacniOdgovori.length<20){
+                        if(tacniOdgovoriKorisnika.length>=16){
+                            console.log(0);
                             krajnjitekstElem.textContent = tekstovi[4];
                         }
-                        else{
+                        if(tacniOdgovoriKorisnika.length>=20){
+                            console.log(0);
                             krajnjitekstElem.textContent = tekstovi[5];
                         }
                     }
