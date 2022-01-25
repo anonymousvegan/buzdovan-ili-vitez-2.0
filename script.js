@@ -21,6 +21,11 @@ const slike = [
     "14.jpg",
     "15.jpg"
     ];
+let tekstovi  = [" Ti si potpuni buzdovan, tebe demoni razvaljuju! Uzmi nešto pametno da radiš, da čitaš Bibliju, upiši školu gusala ili  nađi neko planinarsko društvo!",
+"Nisi  totalno odvaljen, i imaš potencijala, moli se Bogu da se promeniš i da napreduješ u životu!",
+"Jako malo ti fali da budeš vitez, pročitaj još jednom Bibliju pa da te ženimo!",
+"Svaka čast, Serdare! Ti si pravi vitez (ili princeza u slučaju da ovu aplikaciju koriste devojke), možeš da osnuješ porodicu!"
+]
 
 const buttons = document.querySelectorAll(".btn");
 const imgElem = document.querySelector("#slika-pitanja")
@@ -31,6 +36,8 @@ const slikaElem = document.querySelector("#slika-pitanja")
 const linijaElem = document.querySelector("#linija");
 const audioElem = document.querySelector("#audio")
 const krajElem = document.querySelector("#kraj");
+const krajnjitekstElem = document.querySelector("#krajnji-tekst");
+const spanElem = document.querySelector("#rezultat-broj");
 
 buttons.forEach(button =>{
     button.addEventListener("click", (event) => {
@@ -47,8 +54,7 @@ buttons.forEach(button =>{
                     }
                     tacniOdgovori.forEach(odgovor =>{
                         if(i == odgovor){
-                        tacniOdgovoriKorisnika.push(i);
-                        console.log(tacniOdgovoriKorisnika);
+                            tacniOdgovoriKorisnika.push(i);
                         }
                     })
                     trentuno++;
@@ -57,6 +63,20 @@ buttons.forEach(button =>{
                     }
                     else{
                         krajElem.classList.add("prikazi");
+                        let brojTacnihOdgovora = tacniOdgovoriKorisnika.length;
+                        spanElem.textContent = `${brojTacnihOdgovora}/${ukupno}`;
+                        if(brojTacnihOdgovora<6){
+                            krajnjitekstElem.textContent = tekstovi[0];
+                        }
+                        else if(brojTacnihOdgovora<10){
+                            krajnjitekstElem.textContent = tekstovi[1];
+                        }
+                        else if(brojTacnihOdgovora<14){
+                            krajnjitekstElem.textContent = tekstovi[2];
+                        }
+                        else{
+                            krajnjitekstElem.textContent = tekstovi[3];
+                        }
                     }
                 }
             }
