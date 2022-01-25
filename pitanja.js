@@ -141,7 +141,7 @@ let pitanja = [
                 zvuk : "",
             }, 
         ],
-        tacan: [2],
+        tacan: [1, 2],
     },
     {
         pitanje: "Koje ti je omiljeno piće?",
@@ -184,7 +184,7 @@ let pitanja = [
         odgovori: [
             {
                 tekst: "Otišao da zajendo čitamo Bibliju",
-                zvuk : "da_citate_bibliju_mp3",
+                zvuk : "da_citate_bibliju.mp3",
             }, 
             {
                 tekst: "Odbio bih",

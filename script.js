@@ -1,10 +1,10 @@
 const odgovori = [];
+const tacniOdgovoriKorisnika =  [];
 let trentuno = 1; 
 let indexTrenutnog;
 let ukupno = pitanja.length;
 let rand = [];
-
-let slike = [
+const slike = [
     "1.png",
     "2.jpg",
     "3.jpg",
@@ -30,25 +30,34 @@ const pitanjeElem = document.querySelector("#tekst");
 const slikaElem = document.querySelector("#slika-pitanja")
 const linijaElem = document.querySelector("#linija");
 const audioElem = document.querySelector("#audio")
+const krajElem = document.querySelector("#kraj");
 
 buttons.forEach(button =>{
     button.addEventListener("click", (event) => {
-        btn = event.target.textContent;
-        let moguciOdgovori = pitanja[indexTrenutnog].odgovori;
-        for(let i=0; i<3; i++){
-            if(moguciOdgovori[i].tekst == btn){
-                odgovori.push(i);
-                console.log(i);
-                if(moguciOdgovori[i].zvuk != null){
-                    audio.src = moguciOdgovori[i].zvuk;
-                    audio.play();
-                }
-                trentuno++;
-                if(trentuno<=ukupno){
-                    podesi()
-                }
-                else{
-                    console.log("kraj");
+        if(trentuno<=ukupno){
+            btn = event.target.textContent;
+            let moguciOdgovori = pitanja[indexTrenutnog].odgovori;
+            let tacniOdgovori = pitanja[indexTrenutnog].tacan;
+            for(let i=0; i<3; i++){
+                if(moguciOdgovori[i].tekst == btn){
+                    odgovori.push(i);
+                    if(moguciOdgovori[i].zvuk != ""){
+                        audio.src = moguciOdgovori[i].zvuk;
+                        audio.play();
+                    }
+                    tacniOdgovori.forEach(odgovor =>{
+                        if(i == odgovor){
+                        tacniOdgovoriKorisnika.push(i);
+                        console.log(tacniOdgovoriKorisnika);
+                        }
+                    })
+                    trentuno++;
+                    if(trentuno<=ukupno){
+                        podesi()
+                    }
+                    else{
+                        krajElem.classList.add("prikazi");
+                    }
                 }
             }
         }
