@@ -19,11 +19,18 @@ const slike = [
     "12.jpg",
     "13.jpg",
     "14.jpg",
-    "15.jpg"
+    "15.jpg",
+    "16.jpg",
+    "17.jpg",
+    "18.jpg",
+    "19.jpeg",
+    "20.jpeg"
     ];
 let tekstovi  = [" Ti si potpuni buzdovan, tebe demoni razvaljuju! Uzmi nešto pametno da radiš, da čitaš Bibliju, upiši školu gusala ili  nađi neko planinarsko društvo!",
 "Nisi  totalno odvaljen, i imaš potencijala, moli se Bogu da se promeniš i da napreduješ u životu!",
-"Jako malo ti fali da budeš vitez, pročitaj još jednom Bibliju pa da te ženimo!",
+"Vidi prijatelju, treba da prestaneš da radiš te loše stvari, i da počneš da radiš dobre stvari, na samoj si sredini!",
+"još  ti fali da budeš vitez, pročitaj još jednom Bibliju pa da te ženimo!",
+"Na dobrom si putu da budeš prava britka sablja! Potrebno je da obnoviš gradivo i utvrdiš u praksi.",
 "Svaka čast, Serdare! Ti si pravi vitez (ili princeza u slučaju da ovu aplikaciju koriste devojke), možeš da osnuješ porodicu!"
 ]
 
@@ -49,7 +56,7 @@ buttons.forEach(button =>{
                 if(moguciOdgovori[i].tekst == btn){
                     odgovori.push(i);
                     if(moguciOdgovori[i].zvuk != ""){
-                        audio.src = moguciOdgovori[i].zvuk;
+                        audio.src = `files/${moguciOdgovori[i].zvuk}`;
                         audio.play();
                     }
                     tacniOdgovori.forEach(odgovor =>{
@@ -65,17 +72,23 @@ buttons.forEach(button =>{
                         krajElem.classList.add("prikazi");
                         let brojTacnihOdgovora = tacniOdgovoriKorisnika.length;
                         spanElem.textContent = `${brojTacnihOdgovora}/${ukupno}`;
-                        if(brojTacnihOdgovora<6){
+                        if(tacniOdgovori.length<4){
                             krajnjitekstElem.textContent = tekstovi[0];
                         }
-                        else if(brojTacnihOdgovora<10){
+                        else if(tacniOdgovori.length<8){
                             krajnjitekstElem.textContent = tekstovi[1];
                         }
-                        else if(brojTacnihOdgovora<14){
+                        else if(tacniOdgovori.length<12){
                             krajnjitekstElem.textContent = tekstovi[2];
                         }
-                        else{
+                        else if(tacniOdgovori.length<16){
                             krajnjitekstElem.textContent = tekstovi[3];
+                        }
+                        else if(tacniOdgovori.length<20){
+                            krajnjitekstElem.textContent = tekstovi[4];
+                        }
+                        else{
+                            krajnjitekstElem.textContent = tekstovi[5];
                         }
                     }
                 }
@@ -102,10 +115,16 @@ function podesi(){
     trentunoElem.textContent = trentuno;
     ukupnoElem.textContent = ukupno;
     pitanjeElem.textContent = pitanja[indexTrenutnog].pitanje;
-    slikaElem.src = slike[indexTrenutnog];
+    slikaElem.src = `files/${slike[indexTrenutnog]}`;
     linijaElem.style.width = `${(100 / ukupno) * trentuno}%`;   
     buttons.forEach((btn, index) => {
         btn.textContent = pitanja[indexTrenutnog].odgovori[rand[index]].tekst;
+        if(trentuno == 4 && rand[index] == 0){
+            btn.classList.add("btn-danger");
+        }
+        if(trentuno == 5){
+            btn.classList.remove("btn-danger");
+        }
     });
 }
 

@@ -12,7 +12,7 @@ let pitanja = [
             },
             {
                 tekst:  "Ništa jače od vode",
-                zvuk : "",
+                zvuk :  "",
             },
         ],
         tacan: [2],
@@ -286,5 +286,95 @@ let pitanja = [
             }, 
         ],
         tacan: [0,2],
+    },
+    {
+        pitanje: "Dolazi nova godina i drugari te zovu kod njih na gajbu na proslavu i kažu biće i nekih riba, ti ćeš:",
+        odgovori: [
+            {
+                tekst: "Otići kod njih da proslavimo novu godinu",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Otići ću ako je srpska nova godina u pitanju",
+                zvuk : "dnevnjak2.mp3",
+            }, 
+            {
+                tekst: "Otićiću pod jorgan planinu i drugarima ću reći da nisam zainteresovan",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [2],
+    },
+    {
+        pitanje: "Žena ti puni 9 meseci trudnoće i približava se porođaj, ti ćeš:",
+        odgovori: [
+            {
+                tekst: "Odvešćeš je  u državno porodilište",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Odvešćeš je u  neko privatno porodilište",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Pozvaćeš pouzdanu babicu i ostati kući",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [2],
+    },
+    {
+        pitanje: "Dete ti je napunilo 3 godine, šta ćeš da uradiš?",
+        odgovori: [
+            {
+                tekst: "Poslaću ga u vrtić da se socijalizuje",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Na  selu će se igrati sa životinjama  u prirodi",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Upisaću ga na tenis, da bude novi Novak Đoković",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [1],
+    },
+    {
+        pitanje: "Čuo si da se blizu tebe održava kobasicijada ili nešto slično, šta ćeš da uradiš",
+        odgovori: [
+            {
+                tekst: "Otići ću da probam domaće specijalitete",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Ne jedem leševe mrtvih bolesnih životinja",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Ne bih otišao jer je aktuelna pandemija",
+                zvuk : "",
+            }, 
+        ],
+        tacan: [1],
+    },
+    {
+        pitanje: "Najbolji srpski pevač je ...?",
+        odgovori: [
+            {
+                tekst: "Baja mali knindža",
+                zvuk : "",
+            }, 
+            {
+                tekst: "Milomir Miljanić",
+                zvuk : "",
+            }, 
+            {
+                tekst: "MC stojan",
+                zvuk : "stojan.mp3",
+            }, 
+        ],
+        tacan: [2],
     },
 ]
